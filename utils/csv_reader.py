@@ -5,7 +5,7 @@ def read_csv(filepath):
     file = open(filepath)
     reader = csv.reader(file)
 
-    headers = next(reader)
+    headers = [h.strip() for h in next(reader)]
     rows = [row for row in reader]
 
     # create map to improve data access
