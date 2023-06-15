@@ -1,4 +1,5 @@
 import csv
+import pandas as pd
 
 
 def read_csv(filepath):
@@ -12,3 +13,8 @@ def read_csv(filepath):
     column_map = {header.lstrip(): position for position, header in enumerate(headers)}
 
     return headers, rows, column_map
+
+
+def read_single_column(filepath, column_name):
+    file = pd.read_csv(filepath, low_memory=False)
+    return file[' ' + column_name.strip()].tolist()
