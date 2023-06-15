@@ -4,22 +4,20 @@ from os.path import join
 from utils.csv_reader import read_csv
 from utils.entropy import calculate_entropy
 
-FOLDER_PATH = r"F:\studia\6 sem\KiK\CSV-03-11\03-11"
 
+def attack_entropies(folder_path, csv_file, _before_date, _after_date):
 
-def syn():
     time_format = '%Y-%m-%d %H:%M:%S.%f'
-    header, rows, column_map = read_csv(join(FOLDER_PATH, 'Syn.csv'))
+    header, rows, column_map = read_csv('{}\{}'.format(folder_path, csv_file))
 
-    before_date = datetime.strptime('2018-11-03 11:28:00.0', time_format)
-    after_date = datetime.strptime('2018-11-03 17:35:00.0', time_format)
+    before_date = datetime.strptime(_before_date, time_format)
+    after_date = datetime.strptime(_after_date, time_format)
 
     elsewhere = []
     during = []
 
     for row in rows:
         t = datetime.strptime(row[column_map['Timestamp']], time_format)
-
 
         # Get data during attack
         if before_date <= t <= after_date:
@@ -36,8 +34,3 @@ def syn():
     print(calculate_entropy([d[column_map['Destination IP']] for d in elsewhere]))
     print(calculate_entropy([d[column_map['Destination IP']] for d in during]))
 
-    print('Timestamp')
-    print(calculate_entropy([d[column_map['Timestamp']] for d in elsewhere]))
-    print(calculate_entropy([d[column_map['Timestamp']] for d in during]))
-
-syn()
