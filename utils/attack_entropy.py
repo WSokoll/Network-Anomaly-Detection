@@ -1,6 +1,10 @@
-from datetime import datetime
-from os.path import join
+import matplotlib
+import matplotlib.pyplot as plt
 
+matplotlib.use('TkAgg')
+
+from datetime import datetime, timedelta
+from os.path import join
 from utils.csv_reader import read_single_column
 from utils.entropy import calculate_entropy
 
@@ -8,7 +12,6 @@ FOLDER_PATH = r"path\to\folder"
 
 
 def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
-
     time_format = '%Y-%m-%d %H:%M:%S.%f'
     rows = read_single_column(join(FOLDER_PATH, csv_file), parameter)
     timestamps = read_single_column(join(FOLDER_PATH, csv_file), 'Timestamp')
@@ -19,6 +22,12 @@ def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
     elsewhere = []
     during = []
 
+    # data for chart
+    sample = []
+    sample_time = []
+    sample_entropy = []
+    time = 0
+
     for i in range(len(rows)):
         t = datetime.strptime(timestamps[i], time_format)
 
@@ -28,6 +37,24 @@ def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
         # Get data before attack
         else:
             elsewhere.append(rows[i])
+
+        # entropy calculation for samples
+        if i == 0:
+            time = t
+        else:
+            if t >= (time + timedelta(seconds=10)):
+                time = t
+                sample_entropy.append(calculate_entropy(sample))
+                sample_time.append(time)
+
+        sample.append(rows[i])
+
+    # draw chart
+    plt.figure()
+    plt.title(parameter)
+    plt.ylabel('Entropy')
+    plt.plot(sample_time, sample_entropy, color='green', linestyle='dashed', linewidth=2,
+             marker='o', markerfacecolor='red', markersize=5)
 
     return {
         'parameter': parameter,
@@ -60,10 +87,10 @@ def entropy_for_timestamps(csv_file, _before_date, _after_date):
     during_gaps = []
 
     for i in range(len(elsewhere) - 1):
-        elsewhere_gaps.append((elsewhere[i+1] - elsewhere[i]).total_seconds())
+        elsewhere_gaps.append((elsewhere[i + 1] - elsewhere[i]).total_seconds())
 
     for i in range(len(during) - 1):
-        during_gaps.append((during[i+1] - during[i]).total_seconds())
+        during_gaps.append((during[i + 1] - during[i]).total_seconds())
 
     return {
         'parameter': 'Timestamp gaps',
