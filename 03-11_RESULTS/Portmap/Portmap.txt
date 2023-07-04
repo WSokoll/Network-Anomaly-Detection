@@ -1,0 +1,86 @@
+{"parameter": " Source IP", "elsewhere": 0.20311432658392736, "during": 2.7283978732105583}
+{"parameter": " Source Port", "elsewhere": 7.173436885282933, "during": 8.439359195746963}
+{"parameter": " Destination IP", "elsewhere": 0.2412961090527335, "during": 3.658178500172824}
+{"parameter": " Destination Port", "elsewhere": 15.56409139819973, "during": 7.110995242911222}
+{"parameter": " Protocol", "elsewhere": 0.10542798911945743, "during": 1.0380480148748896}
+{"parameter": " Timestamp", "elsewhere": 17.53242011375928, "during": 11.03109061709283}
+{"parameter": " Flow Duration", "elsewhere": 1.8803711111463577, "during": 7.178741396802526}
+{"parameter": " Total Fwd Packets", "elsewhere": 0.1336635732101553, "during": 1.8155137894049789}
+{"parameter": " Total Backward Packets", "elsewhere": 0.165140985561011, "during": 2.1618229579833144}
+{"parameter": "Total Length of Fwd Packets", "elsewhere": 1.303536630623489, "during": 5.044269485002335}
+{"parameter": " Total Length of Bwd Packets", "elsewhere": 0.20828342707933012, "during": 3.6569005009619726}
+{"parameter": " Fwd Packet Length Max", "elsewhere": 1.2729201677673367, "during": 4.40647155492655}
+{"parameter": " Fwd Packet Length Min", "elsewhere": 1.2384413773530327, "during": 3.6464536511194896}
+{"parameter": " Fwd Packet Length Mean", "elsewhere": 1.289682975084113, "during": 4.751210151195214}
+{"parameter": " Fwd Packet Length Std", "elsewhere": 0.10170419682622413, "during": 1.5450864224670844}
+{"parameter": "Bwd Packet Length Max", "elsewhere": 0.19460977430976534, "during": 3.349179978166693}
+{"parameter": " Bwd Packet Length Min", "elsewhere": 0.14816964772597627, "during": 2.5993525154007258}
+{"parameter": " Bwd Packet Length Mean", "elsewhere": 0.20474111705491171, "during": 3.5008155314081537}
+{"parameter": " Bwd Packet Length Std", "elsewhere": 0.06471181375096188, "during": 1.0434280005053538}
+{"parameter": "Flow Bytes/s", "elsewhere": 2.882691712618503, "during": 8.100899854217351}
+{"parameter": " Flow Packets/s", "elsewhere": 1.883842807762199, "during": 7.221924839859187}
+{"parameter": " Flow IAT Mean", "elsewhere": 1.8795122290759771, "during": 7.226027753379535}
+{"parameter": " Flow IAT Std", "elsewhere": 0.3355767819259449, "during": 6.328376332781147}
+{"parameter": " Flow IAT Max", "elsewhere": 1.8756964228572641, "during": 7.167428631381582}
+{"parameter": " Flow IAT Min", "elsewhere": 1.6183900407703795, "during": 2.28336282591519}
+{"parameter": "Fwd IAT Total", "elsewhere": 1.736946023501483, "during": 3.9962306019650344}
+{"parameter": " Fwd IAT Mean", "elsewhere": 1.7380011323872913, "during": 4.012044252452986}
+{"parameter": " Fwd IAT Std", "elsewhere": 0.13915350379424596, "during": 1.9800451775882388}
+{"parameter": " Fwd IAT Max", "elsewhere": 1.7328223597172046, "during": 3.972758494415558}
+{"parameter": " Fwd IAT Min", "elsewhere": 1.620140579798517, "during": 2.3964052147896373}
+{"parameter": "Bwd IAT Total", "elsewhere": 0.19269105826894142, "during": 3.091826609256626}
+{"parameter": " Bwd IAT Mean", "elsewhere": 0.19314043208112605, "during": 3.0938162133782297}
+{"parameter": " Bwd IAT Std", "elsewhere": 0.08762186954867915, "during": 1.490364909595446}
+{"parameter": " Bwd IAT Max", "elsewhere": 0.19242969440758217, "during": 3.0897611713499153}
+{"parameter": " Bwd IAT Min", "elsewhere": 0.13920800163905522, "during": 1.9172571617607126}
+{"parameter": "Fwd PSH Flags", "elsewhere": 0.028808708637215123, "during": 0.3393854968460604}
+{"parameter": " Bwd PSH Flags", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Fwd URG Flags", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Bwd URG Flags", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Fwd Header Length", "elsewhere": 1.397787731467759, "during": 2.791843649736851}
+{"parameter": " Bwd Header Length", "elsewhere": 0.17868685194612546, "during": 2.489569214926537}
+{"parameter": "Fwd Packets/s", "elsewhere": 1.8850963849922404, "during": 7.2289896914165865}
+{"parameter": " Bwd Packets/s", "elsewhere": 0.3023821214210707, "during": 5.939258318667849}
+{"parameter": " Min Packet Length", "elsewhere": 1.237857811205964, "during": 3.6241225810078563}
+{"parameter": " Max Packet Length", "elsewhere": 1.2879965028922722, "during": 4.859947091501851}
+{"parameter": " Packet Length Mean", "elsewhere": 1.3096978399825308, "during": 5.251370777339981}
+{"parameter": " Packet Length Std", "elsewhere": 0.20459530050343108, "during": 3.1728961701160032}
+{"parameter": " Packet Length Variance", "elsewhere": 0.20464176761856634, "during": 3.1728961701160032}
+{"parameter": "FIN Flag Count", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " SYN Flag Count", "elsewhere": 0.001047323148262183, "during": 0.02833154553527558}
+{"parameter": " RST Flag Count", "elsewhere": 0.028808708637215123, "during": 0.3393854968460604}
+{"parameter": " PSH Flag Count", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " ACK Flag Count", "elsewhere": 0.04282002488185587, "during": 0.7551835146823989}
+{"parameter": " URG Flag Count", "elsewhere": 0.07021971025933713, "during": 0.717319809985342}
+{"parameter": " CWE Flag Count", "elsewhere": 0.03973408747614517, "during": 0.49942601090751115}
+{"parameter": " ECE Flag Count", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Down/Up Ratio", "elsewhere": 0.11797622511436748, "during": 1.436259168621635}
+{"parameter": " Average Packet Size", "elsewhere": 1.326351693431598, "during": 5.622649582510753}
+{"parameter": " Avg Fwd Segment Size", "elsewhere": 1.2893277382129764, "during": 4.7452126413253195}
+{"parameter": " Avg Bwd Segment Size", "elsewhere": 0.20462363018233212, "during": 3.499860421570522}
+{"parameter": " Fwd Header Length.1", "elsewhere": 1.397787731467759, "during": 2.791843649736851}
+{"parameter": "Fwd Avg Bytes/Bulk", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Fwd Avg Packets/Bulk", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Fwd Avg Bulk Rate", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Bwd Avg Bytes/Bulk", "elsewhere": 0.0, "during": 0.0}
+{"parameter": " Bwd Avg Packets/Bulk", "elsewhere": 0.0, "during": 0.0}
+{"parameter": "Bwd Avg Bulk Rate", "elsewhere": 0.0, "during": 0.0}
+{"parameter": "Subflow Fwd Packets", "elsewhere": 0.1336635732101553, "during": 1.8155137894049789}
+{"parameter": " Subflow Fwd Bytes", "elsewhere": 1.303536630623489, "during": 5.044269485002335}
+{"parameter": " Subflow Bwd Packets", "elsewhere": 0.165140985561011, "during": 2.1618229579833144}
+{"parameter": " Subflow Bwd Bytes", "elsewhere": 0.20828342707933012, "during": 3.6569005009619726}
+{"parameter": "Init_Win_bytes_forward", "elsewhere": 0.1783552083454007, "during": 2.90357246926092}
+{"parameter": " Init_Win_bytes_backward", "elsewhere": 0.1296641890382982, "during": 2.380814551992467}
+{"parameter": " act_data_pkt_fwd", "elsewhere": 0.1364041856573784, "during": 1.8000661550860633}
+{"parameter": " min_seg_size_forward", "elsewhere": 1.284066047453647, "during": 1.0860959505192207}
+{"parameter": "Active Mean", "elsewhere": 0.057530333257828394, "during": 0.9591085734455471}
+{"parameter": " Active Std", "elsewhere": 0.044700400030703476, "during": 0.6769627586239301}
+{"parameter": " Active Max", "elsewhere": 0.057304626572599125, "during": 0.9591085734455471}
+{"parameter": " Active Min", "elsewhere": 0.05639738359544546, "during": 0.9450160352390872}
+{"parameter": "Idle Mean", "elsewhere": 0.057629251440856684, "during": 0.9665630340350586}
+{"parameter": " Idle Std", "elsewhere": 0.045332421115882426, "during": 0.6947176099887632}
+{"parameter": " Idle Max", "elsewhere": 0.05761870291764993, "during": 0.9656079241974272}
+{"parameter": " Idle Min", "elsewhere": 0.05761870291764993, "during": 0.9665630340350586}
+{"parameter": "SimillarHTTP", "elsewhere": 0.011996726944519616, "during": 0.2076057691932778}
+{"parameter": " Inbound", "elsewhere": 0.1213285920840878, "during": 0.9721664792796416}
+{"parameter": " Label", "elsewhere": 0.1383495700066636, "during": 0.9999993419615876}

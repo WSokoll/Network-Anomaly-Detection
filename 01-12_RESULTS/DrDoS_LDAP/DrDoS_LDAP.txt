@@ -1,0 +1,23 @@
+{"parameter": " Source IP", "elsewhere": 0.32558951153963295, "during": 0.015103195865841103}
+{"parameter": " Source Port", "elsewhere": 11.774254083633931, "during": 8.276954564017725}
+{"parameter": " Destination IP", "elsewhere": 1.325997196123952, "during": 0.016229231260941723}
+{"parameter": " Destination Port", "elsewhere": 15.641142953184357, "during": 15.926681779241443}
+{"parameter": " Protocol", "elsewhere": 0.1591657820925559, "during": 0.009011950067776624}
+{"parameter": " Timestamp", "elsewhere": 19.70111053035476, "during": 20.980824422479206}
+{"parameter": " Flow Duration", "elsewhere": 4.748496062445108, "during": 1.8683462440078933}
+{"parameter": " Total Fwd Packets", "elsewhere": 0.956629830074377, "during": 0.024522862610273314}
+{"parameter": " Total Backward Packets", "elsewhere": 0.26015815194608616, "during": 0.009608083840585235}
+{"parameter": "Total Length of Fwd Packets", "elsewhere": 4.279076360461516, "during": 0.9482802965470677}
+{"parameter": " Total Length of Bwd Packets", "elsewhere": 0.2695571039572179, "during": 0.006668536106516497}
+{"parameter": " Fwd Packet Length Max", "elsewhere": 4.183158396497806, "during": 0.9294034940208773}
+{"parameter": " Fwd Packet Length Min", "elsewhere": 4.0518385901656275, "during": 0.9281552897700532}
+{"parameter": " Fwd Packet Length Mean", "elsewhere": 4.289015831673258, "during": 0.929813244920613}
+{"parameter": " Fwd Packet Length Std", "elsewhere": 1.0330007840198294, "during": 0.0038036156652121156}
+{"parameter": "Bwd Packet Length Max", "elsewhere": 0.24684821088885153, "during": 0.006493662606827429}
+{"parameter": " Bwd Packet Length Min", "elsewhere": 0.16185730155519495, "during": 0.004382996373349194}
+{"parameter": " Bwd Packet Length Mean", "elsewhere": 0.27065752087788403, "during": 0.006730876049510571}
+{"parameter": " Bwd Packet Length Std", "elsewhere": 0.11387352612461414, "during": 0.0023639278906767798}
+{"parameter": "Flow Bytes/s", "elsewhere": 7.520806621132031, "during": 2.755991200906047}
+{"parameter": " Flow Packets/s", "elsewhere": 4.7656372995618215, "during": 1.8713422759032527}
+{"parameter": " Flow IAT Mean", "elsewhere": 4.758015676695876, "during": 1.8726752805053961}
+{"parameter": " Flow IAT Std", "elsewhere": 3.2926815162763416, "during": 0.049096169440456645}

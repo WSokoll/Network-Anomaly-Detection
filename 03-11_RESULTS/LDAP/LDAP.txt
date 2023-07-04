@@ -1,0 +1,16 @@
+{"parameter": " Source IP", "elsewhere": 0.14264180154850903, "during": 0.023326225824338395}
+{"parameter": " Source Port", "elsewhere": 8.222787676503573, "during": 8.313867053536852}
+{"parameter": " Destination IP", "elsewhere": 0.16745250425324515, "during": 0.026869343485273287}
+{"parameter": " Destination Port", "elsewhere": 15.645047516576769, "during": 15.92360400187367}
+{"parameter": " Protocol", "elsewhere": 0.08248789269922142, "during": 0.01367400018983508}
+{"parameter": " Timestamp", "elsewhere": 17.6479749736139, "during": 20.86348790891287}
+{"parameter": " Flow Duration", "elsewhere": 1.9432274318103464, "during": 1.081511576983987}
+{"parameter": " Total Fwd Packets", "elsewhere": 0.11037609477579385, "during": 0.022558146530471484}
+{"parameter": " Total Backward Packets", "elsewhere": 0.11187095174876872, "during": 0.013272783756400706}
+{"parameter": "Total Length of Fwd Packets", "elsewhere": 1.1880200282523063, "during": 0.938821285246329}
+{"parameter": " Total Length of Bwd Packets", "elsewhere": 0.11816121517916855, "during": 0.011563960347635464}
+{"parameter": " Fwd Packet Length Max", "elsewhere": 1.1607583519030606, "during": 0.9240859458050854}
+{"parameter": " Fwd Packet Length Min", "elsewhere": 1.1319482485046584, "during": 0.9222248792250008}
+{"parameter": " Fwd Packet Length Mean", "elsewhere": 1.1749193533075697, "during": 0.9252505059933809}
+{"parameter": " Fwd Packet Length Std", "elsewhere": 0.08278097381466752, "during": 0.007383363819834719}
+{"parameter": "Bwd Packet Length Max", "elsewhere": 0.10758437929456127, "during": 0.011083523518402402}

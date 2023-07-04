@@ -1,25 +1,25 @@
 import matplotlib
 import matplotlib.pyplot as plt
-
 matplotlib.use('TkAgg')
-
+import json
 from datetime import datetime, timedelta
 from os.path import join
 from utils.csv_reader import read_single_column
 from utils.entropy import calculate_entropy
 
-FOLDER_PATH = r"path\to\folder"
+FOLDER_PATH = r"03-11"
 
-
-def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
+def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter, path_to_save=None):
     time_format = '%Y-%m-%d %H:%M:%S.%f'
-    rows = read_single_column(join(FOLDER_PATH, csv_file), parameter)
-    timestamps = read_single_column(join(FOLDER_PATH, csv_file), 'Timestamp')
+    # rows = read_single_column(join(FOLDER_PATH, csv_file), parameter)
+    # timestamps = read_single_column(join(FOLDER_PATH, csv_file), 'Timestamp')
+    rows = read_single_column(csv_file, parameter)
+    timestamps = read_single_column(csv_file, 'Timestamp')
 
     before_date = datetime.strptime(_before_date, time_format)
     after_date = datetime.strptime(_after_date, time_format)
 
-    elsewhere = []
+    # elsewhere = []
     during = []
 
     # data for chart
@@ -35,8 +35,8 @@ def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
         if before_date <= t <= after_date:
             during.append(rows[i])
         # Get data before attack
-        else:
-            elsewhere.append(rows[i])
+        # else:
+        #     elsewhere.append(rows[i])
 
         # entropy calculation for samples
         if i == 0:
@@ -55,17 +55,23 @@ def entropy_elsewhere_during(csv_file, _before_date, _after_date, parameter):
     plt.ylabel('Entropy')
     plt.plot(sample_time, sample_entropy, color='green', linestyle='dashed', linewidth=2,
              marker='o', markerfacecolor='red', markersize=5)
+    plt.axvline(before_date)
+    plt.savefig(path_to_save)
+    plt.close('all')
 
+    with open('base_entropy.json') as f:
+        base_entropies = json.load(f)
+    base_entropy_for_parameter = base_entropies[parameter]
     return {
         'parameter': parameter,
-        'elsewhere': calculate_entropy(elsewhere),
+        'elsewhere': base_entropy_for_parameter,
         'during': calculate_entropy(during)
     }
 
-
 def entropy_for_timestamps(csv_file, _before_date, _after_date):
     time_format = '%Y-%m-%d %H:%M:%S.%f'
-    timestamps = read_single_column(join(FOLDER_PATH, csv_file), 'Timestamp')
+    # timestamps = read_single_column(join(FOLDER_PATH, csv_file), 'Timestamp')
+    timestamps = read_single_column(csv_file, 'Timestamp')
 
     before_date = datetime.strptime(_before_date, time_format)
     after_date = datetime.strptime(_after_date, time_format)
